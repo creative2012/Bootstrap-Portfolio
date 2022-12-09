@@ -1,0 +1,230 @@
+/*  */
+*{
+    font-family:Arial, Helvetica, sans-serif
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+h2{
+    padding: 10px;
+    font-size: 40px;
+    color:white;
+    background-color: rgb(11, 11, 128);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 30px;
+}
+.col{
+    padding: 0 !important;
+    height: 100vh;
+}
+/* header / sidebar */
+.container {
+    margin: 0 !important;
+    max-width: 100%; 
+}
+.sidebar-container{
+    min-width: fit-content;
+    max-width: 200px;
+    z-index: 1;
+    background-color: rgb(36, 36, 37) ;
+    height: 100vh !important;
+    transition: padding-top 0.5s ease-in;
+}
+.sidebar-container-mini{
+    display:none;
+}
+.sidebar-container,
+.main-content-container{
+    padding-top: 50px;
+}
+/* navigation */
+.nav{
+    width: 150px;
+    
+}
+nav a{
+    color: white !important;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    width: 150px;
+    max-width: 110px;
+    transition: all 0.2s ease-in !important;
+
+
+}
+nav a:hover{
+    background-color: white;
+    color:black !important;
+    font-weight: bold;
+    max-width: 150px;  
+}
+.home-link{
+    width: 60px;
+    max-width: 50px;
+}
+.home-link:hover{
+    background-color: white;
+    color:black !important;
+    font-weight: bold;
+    max-width: 60px;  
+}
+/* profile card */
+.profile-mini{
+    display:none;
+}
+.card-profile{
+    line-height: 10px;
+}
+.card-profile h1{
+    font-size: 25px;
+    color: white;
+    width: 180px;
+}
+.card-profile p{
+    font-size: 15px;
+    color: white;
+}
+.card-profile-container{
+    margin-bottom: 50px;
+    width: 100px;
+    background-color: transparent;
+    transition: all 0.5s ease-in;
+}
+.profile-image{
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    background-image: url("../images/cartoon.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    border: 5px solid white;
+
+}
+.profile-image:hover{
+
+    background-image: url("../images/me.jpg");
+
+
+}
+/* hero */
+#hero{
+    height:100vh;
+    min-height: 530px;
+    
+}
+.main-content-container{
+    padding-left: 200px !important;
+    /* min-width: 745px; */
+}
+.jumbotron{
+    height: 100%;
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
+.jumbotron p{
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.jumbotron span{
+    display:block;
+    font-size: 18px;
+}
+/* skills */
+#skills{
+    height:fit-content;
+    
+}
+.card-html-container,
+.card-css-container,
+.card-js-container,
+.card-bs-container{
+    border: none !important;
+    max-width: 300px;
+}
+@media (max-width: 750px) {
+    .sidebar-container{
+        display:none !important;
+    }
+    .main-content-container {
+        padding-left: 0 !important;
+    }
+    .sidebar-container-mini{
+        display:block;
+    }
+    nav{
+        z-index: 1;
+        background-color: rgb(36, 36, 37) ;
+        height: 70px;
+        
+    }
+    nav ul li{
+        margin: 10px;
+    }
+    nav, .nav{
+        width: 100%;
+        min-width: 470px;
+    }
+    .container{
+        padding: 0;
+    }
+    nav ul li {
+        margin: 5px;
+    }
+    nav a{
+        margin: 0;
+        max-width: 90px;
+    }
+    nav a:hover{
+        max-width: 100px;  
+    }
+    .lead-full{
+        display:none;
+        
+    }
+    .profile-mini{
+        display:block;
+    }
+    .profile-image{
+        margin: auto;
+        width: 200px;
+        margin-top: 40px;
+    }
+    .profile-mini h1{
+        color:white;
+        font-size: 70px;
+        
+    }
+    .port{
+        font-size: 20px !important;
+        font-weight:normal !important;
+    }
+    .lead-mini{
+        position:relative;
+        bottom: -60px;
+
+    }
+    #skills{
+        scroll-margin:  70px;
+    }
+
+
+}
+@media (max-height: 580px) {
+    .card-profile-container {
+        margin-bottom: 0;
+    }
+    .sidebar-container{
+        padding-top:10px;
+    }
+}
