@@ -276,7 +276,8 @@ footer p{
 }
 .social a{
     margin-right: 10px;
-    margin-left: 10px;    
+    margin-left: 10px;   
+    transition: box-shadow 0.2s ease-in; 
 }
 .social a:hover{
     border: 1px solid white;
