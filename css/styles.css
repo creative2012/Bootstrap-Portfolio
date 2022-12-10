@@ -253,7 +253,7 @@ nav a:hover{
     }
     nav, .nav{
         width: 100%;
-        min-width: 470px;
+        min-width: 365px;
     }
     .container{
         padding: 0;
