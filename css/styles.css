@@ -1,67 +1,79 @@
 /*  globals */
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Palanquin:wght@300&display=swap');
-*{
+
+* {
     font-family: 'Palanquin', sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
-  }
-.row{
+}
+
+.row {
     margin: 0;
 }
-h2{
+
+h2 {
     padding: 10px;
     font-size: 40px;
-    color:white;
+    color: white;
     background-color: rgb(11, 11, 128);
     margin-bottom: 30px;
 }
+
 h1,
 h2,
-.jumbotron p{
+.jumbotron p {
     font-family: 'Lobster', cursive;
     color: white;
 
 }
-.col{
+
+.col {
     padding: 0 !important;
     height: 100vh;
 }
+
 #skills,
 #work,
-#contact{
-    height:fit-content;
-    
+#contact {
+    height: fit-content;
+
 }
+
 /* header / sidebar */
 .container {
     margin: 0 !important;
-    max-width: 100%; 
+    max-width: 100%;
     padding: 0;
 }
-.sidebar-container{
+
+.sidebar-container {
     min-width: fit-content;
     max-width: 200px;
     z-index: 1;
-    background-color: rgb(36, 36, 37) ;
+    background-color: rgb(36, 36, 37);
     height: 100vh !important;
     transition: padding-top 0.5s ease-in;
 }
-.sidebar-container-mini{
-    display:none;
+
+.sidebar-container-mini {
+    display: none;
 }
+
 .sidebar-container,
-.main-content-container{
+.main-content-container {
     padding-top: 50px;
 }
+
 /* navigation */
-.nav{
+.nav {
     width: 150px;
-    
+
 }
-nav a{
+
+nav a {
     color: white !important;
     border: 1px solid white;
     border-radius: 20px;
@@ -72,46 +84,55 @@ nav a{
 
 
 }
-nav a:hover{
+
+nav a:hover {
     background-color: white;
-    color:black !important;
+    color: black !important;
     font-weight: bold;
-    max-width: 150px;  
+    max-width: 150px;
     box-shadow: rgba(255, 255, 255, 0.637) 0px 6px;
 }
-.home-link{
+
+.home-link {
     width: 60px;
     max-width: 50px;
 }
-.home-link:hover{
+
+.home-link:hover {
     background-color: white;
-    color:black !important;
+    color: black !important;
     font-weight: bold;
-    max-width: 60px;  
-    box-shadow:  rgba(255, 255, 255, 0.637) 0px 6px;
+    max-width: 60px;
+    box-shadow: rgba(255, 255, 255, 0.637) 0px 6px;
 }
+
 /* profile card */
-.profile-mini{
-    display:none;
+.profile-mini {
+    display: none;
 }
-.card-profile{
+
+.card-profile {
     line-height: 10px;
 }
-.card-profile h1{
+
+.card-profile h1 {
     font-size: 25px;
     width: 180px;
 }
-.card-profile p{
+
+.card-profile p {
     font-size: 15px;
     color: white;
 }
-.card-profile-container{
+
+.card-profile-container {
     margin-bottom: 30px;
     width: 100px;
     background-color: transparent;
     transition: all 0.5s ease-in;
 }
-.profile-image{
+
+.profile-image {
     border-radius: 100px;
     height: 150px;
     width: 150px;
@@ -124,95 +145,111 @@ nav a:hover{
     border: 5px solid white;
 
 }
-.profile-image:hover{
+
+.profile-image:hover {
 
     background-image: url("../images/me.jpg");
 
 
 }
+
 /* hero */
-#hero{
-    height:100vh;
+#hero {
+    height: 100vh;
     min-height: 530px;
-    
+
 }
-.main-content-container{
+
+.main-content-container {
     padding-left: 200px !important;
 }
-.jumbotron{
+
+.jumbotron {
     height: 100%;
     background-image: url("../images/hero.jpg");
     background-position: center;
     background-repeat: none;
     background-size: cover;
 }
-.jumbotron p{
+
+.jumbotron p {
     font-size: 50px;
     font-weight: bold;
 }
-.jumbotron span{
-    display:block;
+
+.jumbotron span {
+    display: block;
     font-size: 15px;
     font-style: italic;
 }
+
 /* skills */
 .card-html-container,
 .card-css-container,
 .card-js-container,
-.card-bs-container{
+.card-bs-container {
     text-align: left;
     border: none !important;
     max-width: 300px;
     height: 100%;
 }
-.card-body{
+
+.card-body {
     padding: 20px 0 20px 0;
 }
+
 /* Work */
-#work{
-    background-color:#269;
+#work {
+    background-color: #269;
     background-image: linear-gradient(white 2px, transparent 2px),
-    linear-gradient(90deg, white 2px, transparent 2px),
-    linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+        linear-gradient(90deg, white 2px, transparent 2px),
+        linear-gradient(rgba(255, 255, 255, .3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .3) 1px, transparent 1px);
     background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px;}
-.work-container{
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.work-container {
     max-width: 1000px;
     margin: 0 auto !important;
 }
-.work-link{
+
+.work-link {
     width: 100%;
 }
+
 .work-item,
-.work-hero{
+.work-hero {
     margin-bottom: 20px;
 }
 
 .card-work-container-1,
 .card-work-container-2,
 .card-work-container-3,
-.card-work-container-4{
+.card-work-container-4 {
     height: 200px;
 }
-.card-work-hero-container{
+
+.card-work-hero-container {
     height: 400px;
 }
+
 .card-work-container-1,
 .card-work-container-2,
 .card-work-container-3,
 .card-work-container-4,
-.card-work-hero-container{
-    background-image: url("https://placehold.co/600x400?text=Place+Holder" );
+.card-work-hero-container {
+    background-image: url("https://placehold.co/600x400?text=Place+Holder");
     width: 100% !important;
     background-repeat: none;
     background-position: center;
     background-size: cover;
-    position:relative;
+    position: relative;
 
 }
-.work-body{
-    position:absolute;
+
+.work-body {
+    position: absolute;
     bottom: 20px;
     left: -1px;
     background-color: rgba(11, 11, 128, 0.459);
@@ -223,168 +260,211 @@ nav a:hover{
     text-align: left;
     line-height: 3px;
 }
-.work-body h3{
+
+.work-body h3 {
     font-size: 16px;
     font-weight: bold;
 }
-.work-body span{
+
+.work-body span {
     font-size: 14px;
 }
+
 /* Contact */
-.contact-container{
+.contact-container {
     padding-bottom: 20px;
 }
-.about-item{
+
+.about-item {
     text-align: left;
 }
-.about-item p{
+
+.about-item p {
     font-size: 18px;
 }
-.contact-item{
 
-    justify-content:space-around;
+.contact-item {
+
+    justify-content: space-around;
 
 }
-.contact-item a{
 
-    justify-content:space-around;
+.contact-item a {
+
+    justify-content: space-around;
     text-decoration: none;
     font-size: 20px;
     transition: all 0.2s ease-in;
 
 }
-.contact-item a:hover{
 
-    justify-content:space-around;
+.contact-item a:hover {
+
+    justify-content: space-around;
     text-decoration: none;
     font-size: 20px;
     transform: scale(1.2);
 
 }
+
 /* footer */
-footer{
+footer {
     height: 100px;
     background-color: rgb(11, 11, 128);
     padding: 20px 0 0 0;
 }
-footer p{
+
+footer p {
     color: white;
 }
-.social{
-    height:fit-content;
+
+.social {
+    height: fit-content;
     margin-bottom: 10px;
 }
-.social a{
+
+.social a {
     margin-right: 10px;
-    margin-left: 10px;   
-    transition: box-shadow 0.2s ease-in; 
+    margin-left: 10px;
+    transition: box-shadow 0.2s ease-in;
 }
-.social a:hover{
+
+.social a:hover {
     border: 1px solid white;
     transform: scale(1.5);
 }
-.contact-item a i{
+
+.contact-item a i {
     color: black;
 }
-.btn-github:hover{
+
+.btn-github:hover {
     box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 
 }
-.btn-linkedin:hover{
+
+.btn-linkedin:hover {
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
-.btn-twitter:hover{
+
+.btn-twitter:hover {
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
-@media (max-width: 750px) {
-    .contact-item{
+
+@media (max-width: 992px) {
+    .contact-item {
         margin-bottom: 20px;
     }
-    .contact-item a{ 
+
+    .contact-item a {
         margin-top: 20px;
         margin-bottom: 10px;
     }
+}
+
+@media (max-width: 750px) {
+
     .card-work-container-1,
     .card-work-container-2,
     .card-work-container-3,
-    .card-work-container-4{
+    .card-work-container-4 {
         height: 400px;
     }
-    .sidebar-container{
-        display:none !important;
+
+    .sidebar-container {
+        display: none !important;
     }
+
     .main-content-container {
         padding-left: 0 !important;
     }
-    .sidebar-container-mini{
-        display:block;
+
+    .sidebar-container-mini {
+        display: block;
     }
-    nav{
+
+    nav {
         z-index: 1;
-        background-color: rgb(36, 36, 37) ;
+        background-color: rgb(36, 36, 37);
         height: 70px;
-        
+
     }
-    nav ul li{
+
+    nav ul li {
         margin: 10px;
     }
-    nav, .nav{
+
+    nav,
+    .nav {
         width: 100%;
         min-width: 390px;
     }
-    .container{
+
+    .container {
         padding: 0;
     }
+
     nav ul li {
         margin: 5px;
     }
-    nav a{
+
+    nav a {
         margin: 0;
         max-width: 90px;
     }
-    nav a:hover{
-        max-width: 100px;  
+
+    nav a:hover {
+        max-width: 100px;
     }
-    .lead-full{
-        display:none;
-        
+
+    .lead-full {
+        display: none;
+
     }
-    .profile-mini{
-        display:block;
+
+    .profile-mini {
+        display: block;
     }
-    .profile-image{
+
+    .profile-image {
         margin: auto;
         width: 200px;
         margin-top: 40px;
     }
-    .profile-mini h1{
-        color:white;
+
+    .profile-mini h1 {
+        color: white;
         font-size: 50px;
         font-weight: bold;
-        
+
     }
-    .port{
+
+    .port {
         font-size: 20px !important;
-        font-weight:normal !important;
+        font-weight: normal !important;
     }
-    .lead-mini{
-        position:relative;
+
+    .lead-mini {
+        position: relative;
         bottom: -60px;
 
     }
+
     #skills,
     #work,
-    #contact{
-        scroll-margin:  70px;
+    #contact {
+        scroll-margin: 70px;
     }
 
 
 }
+
 @media (max-height: 580px) {
     .card-profile-container {
         margin-bottom: 0;
     }
-    .sidebar-container{
-        padding-top:10px;
+
+    .sidebar-container {
+        padding-top: 10px;
     }
 }
