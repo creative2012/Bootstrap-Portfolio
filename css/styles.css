@@ -1,4 +1,4 @@
-/*  */
+/*  globals */
 *{
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -20,6 +20,12 @@ h2{
 .col{
     padding: 0 !important;
     height: 100vh;
+}
+#skills,
+#work,
+#contact{
+    height:fit-content;
+    
 }
 /* header / sidebar */
 .container {
@@ -125,7 +131,6 @@ nav a:hover{
 }
 .main-content-container{
     padding-left: 200px !important;
-    /* min-width: 745px; */
 }
 .jumbotron{
     height: 100%;
@@ -145,13 +150,6 @@ nav a:hover{
     font-style: italic;
 }
 /* skills */
-#skills,
-#work,
-#about,
-#contact{
-    height:fit-content;
-    
-}
 .card-html-container,
 .card-css-container,
 .card-js-container,
@@ -164,7 +162,7 @@ nav a:hover{
 .card-body{
     padding: 20px 0 20px 0;
 }
-/* work */
+/* Work */
 #work{
     background-color:#269;
     background-image: linear-gradient(white 2px, transparent 2px),
@@ -176,6 +174,9 @@ nav a:hover{
 .work-container{
     max-width: 1000px;
     margin: 0 auto !important;
+}
+.work-link{
+    width: 100%;
 }
 .work-item,
 .work-hero{
@@ -223,6 +224,8 @@ nav a:hover{
 .work-body span{
     font-size: 14px;
 }
+/* Contact */
+
 @media (max-width: 750px) {
     .card-work-container-1,
     .card-work-container-2,
@@ -294,7 +297,6 @@ nav a:hover{
     }
     #skills,
     #work,
-    #about,
     #contact{
         scroll-margin:  70px;
     }
