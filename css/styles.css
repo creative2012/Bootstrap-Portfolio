@@ -1,8 +1,10 @@
 /*  globals */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Palanquin:wght@300&display=swap');
 *{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Palanquin', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
 html {
     scroll-behavior: smooth;
   }
@@ -229,14 +231,40 @@ nav a:hover{
     font-size: 14px;
 }
 /* Contact */
+.contact-container{
+    padding-bottom: 20px;
+}
+.about-item{
+    text-align: left;
+}
+.about-item p{
+    font-size: 18px;
+}
+.contact-item{
 
+    justify-content:space-around;
+
+}
+.contact-item a{
+
+    justify-content:space-around;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.2s ease-in;
+
+}
+.contact-item a:hover{
+
+    justify-content:space-around;
+    text-decoration: none;
+    font-size: 20px;
+    transform: scale(1.2);
+
+}
 /* footer */
 footer{
     height: 100px;
     background-color: rgb(11, 11, 128);
-   
- 
-    
     padding: 20px 0 0 0;
 }
 footer p{
@@ -254,7 +282,27 @@ footer p{
     border: 1px solid white;
     transform: scale(1.5);
 }
+.contact-item a i{
+    color: black;
+}
+.btn-github:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
+}
+.btn-linkedin:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+.btn-twitter:hover{
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
 @media (max-width: 750px) {
+    .contact-item{
+        margin-bottom: 20px;
+    }
+    .contact-item a{ 
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
     .card-work-container-1,
     .card-work-container-2,
     .card-work-container-3,
